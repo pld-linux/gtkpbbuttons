@@ -1,7 +1,7 @@
 Summary:	This client for pbbuttonsd displays small GTK popup windows
 Summary(pl):	Klient dla pbbuttonsd wyswietlaj±cy ma³e okienka z u¿yciem GTK
 Name:		gtkpbbuttons
-Version:	0.5.2
+Version:	0.6.1
 Release:	1
 License:	GPL
 Group:		X11/Applications
@@ -13,8 +13,6 @@ BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:  ppc
-
-%define		_sounddir	/usr/share/sounds
 
 %description
 This client for pbbuttonsd displays small GTK popup windows each time
@@ -69,6 +67,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS BUGS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
-%{_pixmapsdir}/*
-%{_sounddir}/*
 %{_mandir}/man1/*
+%{_mandir}/man5/*
+%{_datadir}/%{name}/themes/
