@@ -21,20 +21,20 @@ This client for pbbuttonsd displays small GTK popup windows each time
 a message from the daemon pbbuttonsd appeares. The following windows
 could pop up:
 - brightness level
-  The current display brightness level would be displayed. 
+  The current display brightness level would be displayed.
 - volume level
-  The current volume level would be displayed 
+  The current volume level would be displayed
 - mute
-  The window shows if the speakers were muted. 
+  The window shows if the speakers were muted.
 - battery warning
   This window shows that battery is running low and how long it would
-  last until shutdown. 
+  last until shutdown.
 - trackpad mode
-  This window shows the current trackpad mode. 
+  This window shows the current trackpad mode.
 - sleep warning
   This window shows that the machine is going to enter sleep mode.
   Usually at that time you could press any key or move the mouse to
-  prevent sleep mode. 
+  prevent sleep mode.
 
 %description -l pl
 Ten klient pbbuttonsd wy¶wietla z u¿yciem GTK ma³e okienka po ka¿dym
