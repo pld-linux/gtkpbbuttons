@@ -7,7 +7,7 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://dl.sourceforge.net/pbbuttons/%{name}-%{version}.tar.gz
 # Source0-md5:	26001c1d3d6ee22ea57a4f50a747051e
-URL:		http://www.cymes.de/members/joker/projects/pbbuttons/gtkpbbuttons.html
+URL:		http://pbbuttons.sourceforge.net/projects/gtkpbbuttons/
 BuildRequires:	autoconf
 BuildRequires:	gtk+2-devel
 BuildRequires:	pbbuttonsd-lib
