@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://www.cymes.de/members/joker/projects/pbbuttons/tar/%{name}-%{version}.tar.gz
 URL:		http://www.cymes.de/members/joker/projects/pbbuttons/gtkpbbuttons.html
 Requires:	pbbuttonsd
-Requires:	XFree86-lib
+Requires:	XFree86-libs
 BuildRequires:	pbbuttonsd-lib
 BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
