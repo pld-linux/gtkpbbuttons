@@ -1,12 +1,12 @@
 Summary:	This client for pbbuttonsd displays small GTK popup windows
 Summary(pl):	Klient dla pbbuttonsd wyswietlaj±cy ma³e okienka z u¿yciem GTK
 Name:		gtkpbbuttons
-Version:	0.6.3
-Release:	2
+Version:	0.6.4
+Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://www.cymes.de/members/joker/projects/pbbuttons/tar/%{name}-%{version}.tar.gz
-# Source0-md5:	a7cc748a949dc08dba9f64a7e101fcbe
+Source0:	http://dl.sourceforge.net/pbbuttons/%{name}-%{version}.tar.gz
+# Source0-md5:	26001c1d3d6ee22ea57a4f50a747051e
 URL:		http://www.cymes.de/members/joker/projects/pbbuttons/gtkpbbuttons.html
 BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
