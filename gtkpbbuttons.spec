@@ -13,7 +13,7 @@ BuildRequires:	gtk+-devel
 BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-ExclusiveArch:  ppc
+ExclusiveArch:	ppc
 
 %description
 This client for pbbuttonsd displays small GTK popup windows each time
