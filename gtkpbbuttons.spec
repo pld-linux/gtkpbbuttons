@@ -9,8 +9,10 @@ Source0:	http://dl.sourceforge.net/pbbuttons/%{name}-%{version}.tar.gz
 # Source0-md5:	26001c1d3d6ee22ea57a4f50a747051e
 URL:		http://pbbuttons.sourceforge.net/projects/gtkpbbuttons/
 BuildRequires:	autoconf
+BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	pbbuttonsd-lib
+BuildRequires:	pkgconfig
 Requires:	pbbuttonsd
 ExclusiveArch:	%{ix86} ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
