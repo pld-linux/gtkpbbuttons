@@ -7,16 +7,14 @@ License:	GPL
 Group:		X11/Applications
 Source0:	http://www.cymes.de/members/joker/projects/pbbuttons/tar/%{name}-%{version}.tar.gz
 URL:		http://www.cymes.de/members/joker/projects/pbbuttons/gtkpbbuttons.html
-Requires:	pbbuttonsd
-Requires:	XFree86-libs
-BuildRequires:	pbbuttonsd-lib
 BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
+BuildRequires:	pbbuttonsd-lib
+Requires:	pbbuttonsd
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ExclusiveArch:  ppc
 
-%define _localedir /usr/share/locale
-%define _sounddir /usr/share/sounds
+%define		_sounddir	/usr/share/sounds
 
 %description
 This client for pbbuttonsd displays small GTK popup windows each time
@@ -62,14 +60,15 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
+%find_lang %{name}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files
+%files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS BUGS ChangeLog INSTALL NEWS README TODO
+%doc AUTHORS BUGS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/*
 %{_pixmapsdir}/*
-%{_localedir}/*
 %{_sounddir}/*
 %{_mandir}/man1/*
