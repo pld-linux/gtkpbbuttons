@@ -50,7 +50,7 @@ komunikacie od demona pbbuttonsd. Okienka te mog± zawieraæ:
 %setup -q
 
 %build
-autoconf
+%{__autoconf}
 %configure
 
 %{__make}
