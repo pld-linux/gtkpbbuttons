@@ -12,7 +12,7 @@ BuildRequires:	autoconf
 BuildRequires:	gtk+2-devel
 BuildRequires:	pbbuttonsd-lib
 Requires:	pbbuttonsd
-ExclusiveArch:	ppc
+ExclusiveArch:	%{ix86} ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -57,7 +57,8 @@ komunikacie od demona pbbuttonsd. Okienka te mog± zawieraæ:
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %find_lang %{name}
 
