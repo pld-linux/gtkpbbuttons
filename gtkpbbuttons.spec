@@ -1,5 +1,5 @@
-Summary:	This client for pbbuttonsd displays small GTK popup windows
-Summary(pl):	Klient dla pbbuttonsd wy¶wietlaj±cy ma³e okienka z u¿yciem GTK
+Summary:	This client for pbbuttonsd displays small GTK+ popup windows
+Summary(pl):	Klient dla pbbuttonsd wy¶wietlaj±cy ma³e okienka z u¿yciem GTK+
 Name:		gtkpbbuttons
 Version:	0.6.4
 Release:	1
@@ -16,7 +16,7 @@ ExclusiveArch:	ppc
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This client for pbbuttonsd displays small GTK popup windows each time
+This client for pbbuttonsd displays small GTK+ popup windows each time
 a message from the daemon pbbuttonsd appeares. The following windows
 could pop up:
 - brightness level
@@ -36,7 +36,7 @@ could pop up:
   prevent sleep mode.
 
 %description -l pl
-Ten klient pbbuttonsd wy¶wietla z u¿yciem GTK ma³e okienka po ka¿dym
+Ten klient pbbuttonsd wy¶wietla z u¿yciem GTK+ ma³e okienka po ka¿dym
 komunikacie od demona pbbuttonsd. Okienka te mog± zawieraæ:
 - aktualny poziom jasno¶ci
 - aktualn± g³o¶no¶æ
