@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.cymes.de/members/joker/projects/pbbuttons/tar/%{name}-%{version}.tar.gz
+# Source0-md5:	8a223e28f03707218f9ac8de0caa7368
 URL:		http://www.cymes.de/members/joker/projects/pbbuttons/gtkpbbuttons.html
 BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
