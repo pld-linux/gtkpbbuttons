@@ -1,19 +1,22 @@
 Summary:	This client for pbbuttonsd displays small GTK popup windows
 Summary(pl):	Klient dla pbbuttonsd wyswietlaj±cy ma³e okienka z u¿yciem GTK
 Name:		gtkpbbuttons
-Version:	0.4.6
+Version:	0.5.2
 Release:	1
 License:	GPL
 Group:		X11/Applications
 Source0:	http://www.cymes.de/members/joker/projects/pbbuttons/tar/%{name}-%{version}.tar.gz
 URL:		http://www.cymes.de/members/joker/projects/pbbuttons/gtkpbbuttons.html
 Requires:	pbbuttonsd
+Requires:	XFree86-lib
+BuildRequires:	pbbuttonsd-lib
 BuildRequires:	autoconf
 BuildRequires:	gtk+-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+ExclusiveArch:  ppc
 
-%define		_sysconfdir	/etc/pbbuttons
-%define		_bindir		%{_sbindir}
+%define _localedir /usr/share/locale
+%define _sounddir /usr/share/sounds
 
 %description
 This client for pbbuttonsd displays small GTK popup windows each time
@@ -52,25 +55,21 @@ komunikacie od demona pbbuttonsd. Okienka te mog± zawieraæ:
 %build
 %{__autoconf}
 %configure
-
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_sysconfdir},/etc/{rc.d/init.d,sysconfig},%{_mandir}/man8}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
-
-#gzip -9nf NEWS TODO 
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc conf/*.gz *.gz
-%attr(750,root,root) %dir %{_sysconfdir}
-%attr(640,root,root) %config(noreplace) %verify(not size md5 mtime) %{_sysconfdir}/*
-%attr(755,root,root) %{_sbindir}/*
-%attr(640,root,root) %config %verify(not size md5 mtime) /etc/sysconfig/*
-%{_mandir}/man8/*
+%doc AUTHORS BUGS ChangeLog INSTALL NEWS README TODO
+%attr(755,root,root) %{_bindir}/*
+%{_pixmapsdir}/*
+%{_localedir}/*
+%{_sounddir}/*
+%{_mandir}/man1/*
