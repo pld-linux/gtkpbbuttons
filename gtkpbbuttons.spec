@@ -1,5 +1,5 @@
 Summary:	This client for pbbuttonsd displays small GTK+ popup windows
-Summary(pl):	Klient dla pbbuttonsd wy¶wietlaj±cy ma³e okienka z u¿yciem GTK+
+Summary(pl.UTF-8):   Klient dla pbbuttonsd wyÅ›wietlajÄ…cy maÅ‚e okienka z uÅ¼yciem GTK+
 Name:		gtkpbbuttons
 Version:	0.6.8
 Release:	1
@@ -37,16 +37,16 @@ could pop up:
   Usually at that time you could press any key or move the mouse to
   prevent sleep mode.
 
-%description -l pl
-Ten klient pbbuttonsd wy¶wietla z u¿yciem GTK+ ma³e okienka po ka¿dym
-komunikacie od demona pbbuttonsd. Okienka te mog± zawieraæ:
-- aktualny poziom jasno¶ci
-- aktualn± g³o¶no¶æ
-- informacjê, czy d¼wiêk jest aktualnie wyciszony
-- ostrze¿enie o zbli¿aj±cym siê wyczerpaniu baterii
-- informacjê o aktualnym trybie trackpada
-- ostrze¿enie o wchodzeniu komputera w stan u¶pienia - pozwalaj±ce
-  zapobiec u¶pieniu przez naci¶niêcie klawisza lub poruszenie myszy.
+%description -l pl.UTF-8
+Ten klient pbbuttonsd wyÅ›wietla z uÅ¼yciem GTK+ maÅ‚e okienka po kaÅ¼dym
+komunikacie od demona pbbuttonsd. Okienka te mogÄ… zawieraÄ‡:
+- aktualny poziom jasnoÅ›ci
+- aktualnÄ… gÅ‚oÅ›noÅ›Ä‡
+- informacjÄ™, czy dÅºwiÄ™k jest aktualnie wyciszony
+- ostrzeÅ¼enie o zbliÅ¼ajÄ…cym siÄ™ wyczerpaniu baterii
+- informacjÄ™ o aktualnym trybie trackpada
+- ostrzeÅ¼enie o wchodzeniu komputera w stan uÅ›pienia - pozwalajÄ…ce
+  zapobiec uÅ›pieniu przez naciÅ›niÄ™cie klawisza lub poruszenie myszy.
 
 %prep
 %setup -q
