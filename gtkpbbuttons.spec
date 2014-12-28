@@ -9,7 +9,7 @@ Source0:	http://dl.sourceforge.net/pbbuttons/%{name}-%{version}.tgz
 # Source0-md5:	59ae81ec9eefe905e24cabde123ac496
 URL:		http://pbbuttons.sourceforge.net/projects/gtkpbbuttons/
 BuildRequires:	autoconf
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	gtk+2-devel
 BuildRequires:	pbbuttonsd-lib
 BuildRequires:	pkgconfig
